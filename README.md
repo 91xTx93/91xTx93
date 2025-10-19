@@ -1,1 +1,229 @@
-# 91xTx93.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="91xTx93's personal links and contact information">
+    <title>91xTx93</title>
+    <style>
+        :root {
+            --gradient: linear-gradient(45deg, #a6181b, #ff3300, #ff2600);
+            --glow-rgba: rgba(166, 24, 27, 0.5);
+            --dark-grad: linear-gradient(135deg, #222, #333);
+            --shadow: 0 0 10px rgba(0, 0, 0, 0.5), inset 0 0 5px rgba(255, 165, 0, 0.2);
+            --text-color: #ddd;
+            --bg-color: #111;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: Arial, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .profile-container {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 20px var(--glow-rgba);
+            animation: gentle-glow 18s ease-in-out infinite;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            mix-blend-mode: screen;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .flame-bg {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, #ff4500 10%, #ffa500 0%, #ff8c00 0%, transparent 10%);
+            filter: blur(2rem);
+            opacity: 0.5;
+            z-index: 1;
+            animation: flame-flicker 18s ease-in-out infinite;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            letter-spacing: 0.1em;
+            color: var(--text-color);
+            text-shadow: 0 0 5px var(--glow-rgba);
+        }
+
+        .links-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem;
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .links-list li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .link {
+            color: transparent;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-decoration: none;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 50%;
+            background: var(--gradient);
+            box-shadow: 0 0 5px var(--glow-rgba);
+            transition: all 0.4s ease;
+        }
+
+        .link:hover::after {
+            width: 100%;
+            left: 0;
+            box-shadow: 0 0 15px rgba(255, 165, 0, 1);
+        }
+
+        .link:hover {
+            text-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+        }
+
+        .info-box {
+            background: var(--dark-grad);
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            width: 92%;
+            max-width: 40em;
+            text-align: left;
+            margin: 1rem auto 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            box-shadow: var(--shadow);
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .label {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+
+        @keyframes gentle-glow {
+            0%, 100% { box-shadow: 0 0 10px rgba(166, 24, 27, 0.3), 0 0 20px rgba(166, 24, 0, 0.2); }
+            50% { box-shadow: 0 0 30px rgba(166, 24, 27, 0.75), 0 0 50px rgba(166, 24, 0.502); }
+        }
+
+        @keyframes flame-flicker {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            .info-box { 
+                font-size: 0.75rem; 
+                padding: 1rem; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <div class="flame-bg"></div>
+            <img src="https://avatars.githubusercontent.com/u/190220957" alt="91xTx93" class="profile-img">
+        </div>
+        <h1>91xTx93</h1>
+    </header>
+
+    <ul class="links-list">
+        <li><a href="https://91xtx93.github.io" target="_blank" rel="noopener" class="link">91xtx93.github.io</a> 
+            <br>(-----------.onion //WIP)
+        </li>
+        
+        <li>Dojo Bay: <a href="https://dojobay.pw" target="_blank" rel="noopener" class="link">dojobay.pw</a></li>
+        
+        <li>Dojo Bay Onion: <a href="http://dojobayrdodoggmcrq5xrzfxhnvh4h52ti4d7oclegps3tlliv3e66qd.onion/" target="_blank" rel="noopener" class="link">dojobay onion site</a></li>
+        
+        <li>MeetUp documents: <a href="https://91xtx93.xyz" target="_blank" rel="noopener" class="link">91xtx93.xyz</a></li>
+        
+        <li>Twitter: <a href="https://x.com/91xTx93x3" target="_blank" rel="noopener" class="link">x.com/91xTx93x3</a></li>
+        
+        <li>GitHub: <a href="https://github.com/91xTx93" target="_blank" rel="noopener" class="link">github.com/91xTx93</a></li>
+        
+        <li>
+            <a href="https://coracle.social/people/nprofile1qqstuds7qr2chtly60dw62s3n3nhclx54am70rrzyy66fzcpv29nchsrzgg00" target="_blank" rel="noopener" class="link">NOSTR profile</a>
+            <div class="info-box"><span class="label">npub:</span> npub1hcmpuqx43wh7f576a54pr8r8037dftmhu7xxygf45j9szc5t830qvflwqw</div>
+        </li>
+        
+        <li>
+            <a href="https://keys.openpgp.org/search?q=91xtx93@proton.me" target="_blank" rel="noopener" class="link">PGP</a>
+            <div class="info-box">-----BEGIN PGP PUBLIC KEY BLOCK-----
+Fingerprint: F6F5 BA71 1229 2F2D 05D9 AEEC E5E3 3ECA 87F1 4295
+Comment: xTx &lt;91xtx93@proton.me&gt;
+
+xjMEZwsyLBYJKwYBBAHaRw8BAQdAYDTS7OuOljykW4ZQQl/2v1NQj15uhT8T
+HEkj7pQ2nuTNJTkxeHR4OTNAcHJvdG9uLm1lIDw5MXh0eDkzQHByb3Rvbi5t
+ZT7CjAQQFgoAPgWCZwsyLAQLCQcICZDl4z7Kh/FClQMVCAoEFgACAQIZAQKb
+AwIeARYhBPb1unESKS8tBdmu7OXjPsqH8UKVAABmDQD/bxRJt/gk9hiMEpr3
+jhrF7FT339t1gvuTEmvkfeSYQwEBAPBTd4JLh0nDSA1yGcPnCumA8giP+cZ4
+FAp4V4ovR/UNzjgEZwsyLBIKKwYBBAGXVQEFAQEHQHThcqDVWzzxA1WSFhdt
+iC2PX5HpamUEULvNzrwrt1IvAwEIB8J4BBgWCgAqBYJnCzIsCZDl4z7Kh/FC
+lQKbDBYhBPb1unESKS8tBdmu7OXjPsqH8UKVAACamQD7BBol0PRKhm52rEnv
+Gr7iihpd37ty8zg9RoIZa+geTKgA/2J8Cwb25SuLVB+HELSKHpRc+i5kybF/
+G37U+I1QP5IH
+=0zEY
+-----END PGP PUBLIC KEY BLOCK-----
+    </div>
+        </li>
+        
+        <li>
+            <a href="https://paynym.rs/+determinedcut58" target="_blank" rel="noopener" class="link">PayNym</a>
+            <div class="info-box">
+                <span class="label">PayNym:</span> +determinedcut58 <br>
+                <span class="label">Payment Code:</span> PM8TJQwkgoVeogzAQe431Bn3FSsXiCqjmFCpysFuSTjB7FaxfrJGtMAEfsA5dvptjMAAxLXKM6bDAen5tFp326EHBmRH6jQ9vJDPnSwARLmUcJoucQtd
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
