@@ -1,0 +1,8 @@
+{
+  "names": {
+    "91xTx93": "be361e00d58bafe4d3daed2a119c677c7cd4af77e78c622135a48b01628b3c5e"
+  },
+  "relays": {
+    "be361e00d58bafe4d3daed2a119c677c7cd4af77e78c622135a48b01628b3c5e": ["wss://nostr.mom", "wss://relay.primal.net", "wss://relay.nostr.band", "wss://relay.damus.io"]
+  }
+}
