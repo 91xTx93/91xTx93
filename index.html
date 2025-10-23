@@ -157,6 +157,56 @@
             50% { transform: scale(1.1); opacity: 1; }
         }
 
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            background: var(--dark-grad);
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 500px;
+            position: relative;
+            box-shadow: var(--shadow);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #fff;
+        }
+
+        .qr-code {
+            display: block;
+            margin: 20px auto;
+            max-width: 200px;
+        }
+
+        .payment-code {
+            word-break: break-all;
+            font-family: 'Courier New', monospace;
+            background: rgba(0,0,0,0.2);
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+
         @media (max-width: 600px) {
             body { padding: 1rem; }
             h1 { font-size: 1.4rem; }
@@ -212,14 +262,56 @@ PsqH8UKVAACamQD7BBol0PRKhm52rEnvGr7iihpd37ty8zg9RoIZa+geTKgA/2J8
 Cwb25SuLVB+HELSKHpRc+i5kybF/G37U+I1QP5IH
 =0zEY
 -----END PGP PUBLIC KEY BLOCK-----
-    </div><br>
+    </div>
         </li><br>
         
         <li>
             <a href="https://paynym.rs/+determinedcut58" target="_blank" rel="noopener" class="link">PayNym</a>
             <div class="info-box"><span class="label">PayNym:<br></span>+determinedcut58 <br><br><span class="label">Payment Code:<br></span>PM8TJQwkgoVeogzAQe431Bn3FSsXiCqjmFCpysFuSTjB7FaxfrJGtMAEfsA5dvptjMAAxLXKM6bDAen5tFp326EHBmRH6jQ9vJDPnSwARLmUcJoucQtd</div>
             
-        </li>
+        </li><br>
+
+        <li>
+            <a href="#monero" class="link">Monero</a>
+            <div class="info-box"><span class="label">Payment Code:<br></span>85DiAnQ5DmiJo5HzhA322uHVyouTtMXfLPhkxjULy9oLVWmFj8BbKoAWjQS2dBiv7Wf1Lj5sX4EDLZfBCxHHpFjSTv963N3</div>
+            
+        </li><br>
     </ul>
+
+    <!-- Modal -->
+    <div id="moneroModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Monero Payment Code</h3>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=85DiAnQ5DmiJo5HzhA322uHVyouTtMXfLPhkxjULy9oLVWmFj8BbKoAWjQS2dBiv7Wf1Lj5sX4EDLZfBCxHHpFjSTv963N3" alt="Monero QR Code" class="qr-code">
+            <div class="payment-code">
+                85DiAnQ5DmiJo5HzhA322uHVyouTtMXfLPhkxjULy9oLVWmFj8BbKoAWjQS2dBiv7Wf1Lj5sX4EDLZfBCxHHpFjSTv963N3
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal functionality
+        const modal = document.getElementById("moneroModal");
+        const closeBtn = document.getElementsByClassName("close")[0];
+
+        // Añadir onclick al enlace de Monero
+        document.querySelector('a[href="#monero"]').onclick = function(e) {
+            e.preventDefault();
+            modal.style.display = "block";
+        }
+
+        // Cerrar modal con X
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Cerrar modal haciendo clic fuera
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
