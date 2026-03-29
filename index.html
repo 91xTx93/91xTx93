@@ -99,12 +99,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.75rem;
+        gap: 1rem;
       }
 
       .links-list li {
         width: 100%;
         text-align: center;
+      }
+
+      .links-list li:has(.info-box) {
+        margin-top: 0.5rem;
       }
 
       .link {
@@ -161,6 +165,12 @@
         background-clip: text;
         color: transparent;
         font-weight: bold;
+        display: block;
+        margin-top: 0.5rem;
+      }
+
+      .label:first-child {
+        margin-top: 0;
       }
 
       @keyframes gentle-glow {
@@ -268,120 +278,70 @@
 
     <ul class="links-list">
       <li>
-        <a href="https://xtx.st" target="_blank" rel="noopener" class="link"
-          >xtx.st</a
-        >
+        <a href="https://xtx.st" target="_blank" rel="noopener" class="link">xtx.st</a>
       </li>
-
       <li>
         Dojo Bay:
-        <a href="https://dojobay.pw" target="_blank" rel="noopener" class="link"
-          >dojobay.pw</a
-        >
+        <a href="https://dojobay.pw" target="_blank" rel="noopener" class="link">dojobay.pw</a>
       </li>
-
       <li>
         Dojo Bay Onion:
-        <a
-          href="http://dojobayswp3qv5iwamualgzlv6faenb5me677wcs3detwmjcfv3ja7ad.onion/"
-          target="_blank"
-          rel="noopener"
-          class="link"
-          >dojobay onion site</a
-        >
+        <a href="http://dojobayswp3qv5iwamualgzlv6faenb5me677wcs3detwmjcfv3ja7ad.onion/" target="_blank" rel="noopener" class="link">dojobay onion site</a>
       </li>
-
       <li>
         Twitter:
-        <a
-          href="https://x.com/91xTx93x3"
-          target="_blank"
-          rel="noopener"
-          class="link"
-          >x.com/91xTx93x3</a
-        >
+        <a href="https://x.com/91xTx93x3" target="_blank" rel="noopener" class="link">x.com/91xTx93x3</a>
       </li>
-
       <li>
         GitHub:
-        <a
-          href="https://github.com/91xTx93"
-          target="_blank"
-          rel="noopener"
-          class="link"
-          >github.com/91xTx93</a
-        >
+        <a href="https://github.com/91xTx93" target="_blank" rel="noopener" class="link">github.com/91xTx93</a>
       </li>
-      <br />
 
       <li>
-        <a
-          href="https://coracle.social/people/nprofile1qqstuds7qr2chtly60dw62s3n3nhclx54am70rrzyy66fzcpv29nchsrzgg00"
-          target="_blank"
-          rel="noopener"
-          class="link"
-          >NOSTR profile</a
-        >
+        <a href="https://coracle.social/people/nprofile1qqstuds7qr2chtly60dw62s3n3nhclx54am70rrzyy66fzcpv29nchsrzgg00" target="_blank" rel="noopener" class="link">NOSTR profile</a>
         <div class="info-box">
-          <span class="label">npub:<br /></span
-          >npub1hcmpuqx43wh7f576a54pr8r8037dftmhu7xxygf45j9szc5t830qvflwqw<br /><br /><span
-            class="label"
-            >Public Key:<br /></span
-          >be361e00d58bafe4d3daed2a119c677c7cd4af77e78c622135a48b01628b3c5e
-        </div>
+<span class="label">npub:</span>
+npub1hcmpuqx43wh7f576a54pr8r8037dftmhu7xxygf45j9szc5t830qvflwqw
+
+<span class="label">Public Key:</span>
+be361e00d58bafe4d3daed2a119c677c7cd4af77e78c622135a48b01628b3c5e</div>
       </li>
-      <br />
 
       <li>
-        <a
-          href="https://keys.openpgp.org/search?q=91xtx93@proton.me"
-          target="_blank"
-          rel="noopener"
-          class="link"
-          >PGP</a
-        >
-        <div class="info-box">
-          -----BEGIN PGP PUBLIC KEY BLOCK----- Comment: F6F5 BA71 1229 2F2D 05D9
-          AEEC E5E3 3ECA 87F1 4295 Comment: 91xtx93@proton.me
-          <91xtx93@proton.me>
-          xjMEZwsyLBYJKwYBBAHaRw8BAQdAYDTS7OuOljykW4ZQQl/2v1NQj15uhT8THEkj
-          7pQ2nuTNJTkxeHR4OTNAcHJvdG9uLm1lIDw5MXh0eDkzQHByb3Rvbi5tZT7CjAQQ
-          FgoAPgWCZwsyLAQLCQcICZDl4z7Kh/FClQMVCAoEFgACAQIZAQKbAwIeARYhBPb1
-          unESKS8tBdmu7OXjPsqH8UKVAABmDQD/bxRJt/gk9hiMEpr3jhrF7FT339t1gvuT
-          EmvkfeSYQwEBAPBTd4JLh0nDSA1yGcPnCumA8giP+cZ4FAp4V4ovR/UNzjgEZwsy
-          LBIKKwYBBAGXVQEFAQEHQHThcqDVWzzxA1WSFhdtiC2PX5HpamUEULvNzrwrt1Iv
-          AwEIB8J4BBgWCgAqBYJnCzIsCZDl4z7Kh/FClQKbDBYhBPb1unESKS8tBdmu7OXj
-          PsqH8UKVAACamQD7BBol0PRKhm52rEnvGr7iihpd37ty8zg9RoIZa+geTKgA/2J8
-          Cwb25SuLVB+HELSKHpRc+i5kybF/G37U+I1QP5IH =0zEY -----END PGP PUBLIC KEY
-          BLOCK-----
-        </div>
+        <a href="https://keys.openpgp.org/search?q=91xtx93@proton.me" target="_blank" rel="noopener" class="link">PGP</a>
+        <div class="info-box">-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: F6F5 BA71 1229 2F2D 05D9 AEEC E5E3 3ECA 87F1 4295
+Comment: 91xtx93@proton.me &lt;91xtx93@proton.me&gt;
+
+xjMEZwsyLBYJKwYBBAHaRw8BAQdAYDTS7OuOljykW4ZQQl/2v1NQj15uhT8THEkj
+7pQ2nuTNJTkxeHR4OTNAcHJvdG9uLm1lIDw5MXh0eDkzQHByb3Rvbi5tZT7CjAQQ
+FgoAPgWCZwsyLAQLCQcICZDl4z7Kh/FClQMVCAoEFgACAQIZAQKbAwIeARYhBPb1
+unESKS8tBdmu7OXjPsqH8UKVAABmDQD/bxRJt/gk9hiMEpr3jhrF7FT339t1gvuT
+EmvkfeSYQwEBAPBTd4JLh0nDSA1yGcPnCumA8giP+cZ4FAp4V4ovR/UNzjgEZwsy
+LBIKKwYBBAGXVQEFAQEHQHThcqDVWzzxA1WSFhdtiC2PX5HpamUEULvNzrwrt1Iv
+AwEIB8J4BBgWCgAqBYJnCzIsCZDl4z7Kh/FClQKbDBYhBPb1unESKS8tBdmu7OXj
+PsqH8UKVAACamQD7BBol0PRKhm52rEnvGr7iihpd37ty8zg9RoIZa+geTKgA/2J8
+Cwb25SuLVB+HELSKHpRc+i5kybF/G37U+I1QP5IH
+=0zEY
+-----END PGP PUBLIC KEY BLOCK-----</div>
       </li>
-      <br />
 
       <li>
-        <a
-          href="https://paynym.rs/+determinedcut58"
-          target="_blank"
-          rel="noopener"
-          class="link"
-          >PayNym</a
-        >
+        <a href="https://paynym.rs/+determinedcut58" target="_blank" rel="noopener" class="link">PayNym</a>
         <div class="info-box">
-          <span class="label">PayNym:<br /></span>+determinedcut58
-          <br /><br /><span class="label">Payment Code:<br /></span
-          >PM8TJQwkgoVeogzAQe431Bn3FSsXiCqjmFCpysFuSTjB7FaxfrJGtMAEfsA5dvptjMAAxLXKM6bDAen5tFp326EHBmRH6jQ9vJDPnSwARLmUcJoucQtd
-        </div>
+<span class="label">PayNym:</span>
++determinedcut58
+
+<span class="label">Payment Code:</span>
+PM8TJQwkgoVeogzAQe431Bn3FSsXiCqjmFCpysFuSTjB7FaxfrJGtMAEfsA5dvptjMAAxLXKM6bDAen5tFp326EHBmRH6jQ9vJDPnSwARLmUcJoucQtd</div>
       </li>
-      <br />
 
       <li>
         <a href="#monero" class="link">Monero</a>
         <div class="info-box">
-          <span class="label">Payment Code:<br /></span
-          >85DiAnQ5DmiJo5HzhA322uHVyouTtMXfLPhkxjULy9oLVWmFj8BbKoAWjQS2dBiv7Wf1Lj5sX4EDLZfBCxHHpFjSTv963N3
-        </div>
+<span class="label">Payment Code:</span>
+85DiAnQ5DmiJo5HzhA322uHVyouTtMXfLPhkxjULy9oLVWmFj8BbKoAWjQS2dBiv7Wf1Lj5sX4EDLZfBCxHHpFjSTv963N3</div>
       </li>
-      <br />
     </ul>
 
     <div id="moneroModal" class="modal">
